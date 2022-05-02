@@ -16,6 +16,7 @@
     <servlet-mapping>
         <servlet-name>kosarServlet</servlet-name>
         <url-pattern>/kosarServlet</url-pattern>
+        <url-pattern>/kosar.html</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
