@@ -39,12 +39,12 @@ public class termekServlet extends HttpServlet {
         out.println("<input type = 'submit' value = 'Megrendel'/>");
         out.println("</form>");
         out.println("<div class='pictures'>");
-        out.println("<img src=\"protein.jpg\" alt=\"Whey\" width=\"50\" height=\"50\">");
-        out.println("<img src=\"MassGainer.jpg\" alt=\"MassGainer\" width=\"50\" height=\"50\">");
-        out.println("<img src=\"FatBurner.jpg\" alt=\"FatBurner\" width=\"50\" height=\"50\">");
-        out.println("<img src=\"Vitamin.jpg\" alt=\"Vitamin\" width=\"50\" height=\"50\">");
-        out.println("<img src=\"JointSupport.jpg\" alt=\"JointSupport\" width=\"50\" height=\"50\">");
-        out.println("<img src=\"PreWorkout.jpg\" alt=\"PreWorkout\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/protein.jpg\" alt=\"Whey\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/MassGainer.jpg\" alt=\"MassGainer\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/FatBurner.jpg\" alt=\"FatBurner\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/Vitamin.jpg\" alt=\"Vitamin\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/JointSupport.jpg\" alt=\"JointSupport\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/PreWorkout.jpg\" alt=\"PreWorkout\" width=\"50\" height=\"50\">");
         out.println("</div>");
         out.println("<form action = 'belepes.html'>");
         out.println("<input type = 'submit' value = 'Kilépés'>");

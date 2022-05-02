@@ -114,9 +114,10 @@ img{
 .pictures {
     background-color: transparent;
     position: absolute;
-    top: 9%;
+    top: 14%;
     left:30%;
     display: flex;
     flex-direction: column;
-    
 }
+
+
