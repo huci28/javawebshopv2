@@ -29,7 +29,7 @@ public class termekServlet extends HttpServlet {
         out.println("<body>");
         out.println("<form action = 'kosar.html' method = 'POST'>");
         tservice.getTermekek().forEach(term -> {
-            out.println(term + "<input type = 'number' name = '' " + term.getTID() + "'/><BR>");
+            out.println(term + "<input type = 'text' name = '" + term.getTID() + "'/><BR>");
         });
         out.println("<input type = 'submit' value = 'Megrendel'/>");
         out.println("</form>");
