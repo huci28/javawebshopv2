@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/src/java/manager/termekkosar.java</file>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/src/java/Servlets/kosarServlet.java</file>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/src/java/manager/termek.java</file>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/src/java/Servlets/termekServlet.java</file>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/guwq3g/Documents/NetBeansProjects/webstore/src/java/manager/termekservice.java</file>
+            <file>file:/H:/webstorev2/web/belepes.html</file>
+            <file>file:/H:/webstorev2/src/java/Servlets/kilepes.java</file>
+            <file>file:/H:/webstorev2/web/belepesError.html</file>
+            <file>file:/H:/webstorev2/web/WEB-INF/sun-web.xml</file>
+            <file>file:/H:/webstorev2/web/WEB-INF/web.xml</file>
+            <file>file:/H:/webstorev2/src/java/Servlets/termekServlet.java</file>
         </group>
     </open-files>
 </project-private>

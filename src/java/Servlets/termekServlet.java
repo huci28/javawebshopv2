@@ -33,6 +33,9 @@ public class termekServlet extends HttpServlet {
         });
         out.println("<input type = 'submit' value = 'Megrendel'/>");
         out.println("</form>");
+        out.println("<form action = 'logout.html'>");
+        out.println("<input type = 'submit' value = 'Kilépés'>");
+        out.println("</form>");
         out.println("</body>");
         out.println("</html>");
         out.close();
