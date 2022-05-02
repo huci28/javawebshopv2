@@ -31,14 +31,22 @@ public class termekServlet extends HttpServlet {
         "<link href=\"https://fonts.googleapis.com/css2?family=Oswald&display=swap\" rel=\"stylesheet\">");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h2 id='chooseProduct'>Válasszon termékeink széles választékából!</h2>");
+        out.println("<h2 id='chooseProduct'>Válasszon termékeink széles kínálatából!</h2>");
         out.println("<form  id='termekekform' action = 'kosar.html' method = 'POST'>");
         tservice.getTermekek().forEach(term -> {
             out.println("<div class='products'>" + term + " Ft " + "<input type = 'number'  min=\"0\" max=\"99\" name = '" + term.getTID() + "'/></div><BR>");
         });
         out.println("<input type = 'submit' value = 'Megrendel'/>");
         out.println("</form>");
-        out.println("<form action = 'logout.html'>");
+        out.println("<div class='pictures'>");
+        out.println("<img src=\"protein.jpg\" alt=\"Whey\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"MassGainer.jpg\" alt=\"MassGainer\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"FatBurner.jpg\" alt=\"FatBurner\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"Vitamin.jpg\" alt=\"Vitamin\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"JointSupport.jpg\" alt=\"JointSupport\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"PreWorkout.jpg\" alt=\"PreWorkout\" width=\"50\" height=\"50\">");
+        out.println("</div>");
+        out.println("<form action = 'belepes.html'>");
         out.println("<input type = 'submit' value = 'Kilépés'>");
         out.println("</form>");
         out.println("</body>");
