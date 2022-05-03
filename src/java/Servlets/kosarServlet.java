@@ -24,12 +24,22 @@ public class kosarServlet extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Servlet kosarServlet</title>");
+        out.println("<title>Kosár</title>");
+        out.println("<link rel=\"stylesheet\" href=\"kosarstyle.css\" type=\"text/css\">");
+        out.println("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
+        "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n" +
+        "<link href=\"https://fonts.googleapis.com/css2?family=Oswald&display=swap\" rel=\"stylesheet\">");
         out.println("</head>");
         out.println("<body>");
+        out.println("<h2>Az Ön rendelése:</h2>");
+        out.println("<div id='inCart'>");
         kosar.stream().forEach(item -> {
-            out.println(item + "<br>");
+            out.println(item + " db Összesen: " + item.osszesen() + "<br>");
         });
+        out.println("</div>");
+        out.println("<form action = 'thankyou.html'>");
+        out.println("<input type = 'submit' value = 'Megrendelés'>");
+        out.println("</form>");
         out.println("</body>");
         out.println("</html>");
         out.close();

@@ -24,16 +24,29 @@ public class termekServlet extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Servlet termekServlet</title>");
+        out.println("<title>Termékeink</title>");
+        out.println("<link rel=\"stylesheet\" href=\"termekstyle.css\" type=\"text/css\">");
+        out.println("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
+        "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n" +
+        "<link href=\"https://fonts.googleapis.com/css2?family=Oswald&display=swap\" rel=\"stylesheet\">");
         out.println("</head>");
         out.println("<body>");
-        out.println("<form action = 'kosar.html' method = 'POST'>");
+        out.println("<h2 id='chooseProduct'>Válasszon termékeink széles kínálatából!</h2>");
+        out.println("<form  id='termekekform' action = 'kosar.html' method = 'POST'>");
         tservice.getTermekek().forEach(term -> {
-            out.println(term + "<input type = 'text' name = '" + term.getTID() + "'/><BR>");
+            out.println("<div class='products'>" + term + " Ft " + "<input type = 'number'  min=\"0\" max=\"99\" name = '" + term.getTID() + "'/></div><BR>");
         });
         out.println("<input type = 'submit' value = 'Megrendel'/>");
         out.println("</form>");
-        out.println("<form action = 'logout.html'>");
+        out.println("<div class='pictures'>");
+        out.println("<img src=\"images/protein.jpg\" alt=\"Whey\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/MassGainer.jpg\" alt=\"MassGainer\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/FatBurner.jpg\" alt=\"FatBurner\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/Vitamin.jpg\" alt=\"Vitamin\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/JointSupport.jpg\" alt=\"JointSupport\" width=\"50\" height=\"50\">");
+        out.println("<img src=\"images/PreWorkout.jpg\" alt=\"PreWorkout\" width=\"50\" height=\"50\">");
+        out.println("</div>");
+        out.println("<form action = 'belepes.html'>");
         out.println("<input type = 'submit' value = 'Kilépés'>");
         out.println("</form>");
         out.println("</body>");
