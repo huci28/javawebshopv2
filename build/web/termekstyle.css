@@ -59,9 +59,7 @@ select {
 
 #termekekform {
     padding: 20px;
-    position: absolute;
-    top: 80%; right: 50%;
-    transform: translate(50%,-50%);
+    position: relative;
     border: 2px solid black;
     border-radius: 20px;
     display: flex;
@@ -73,6 +71,9 @@ select {
     width: 800px;
     height: auto;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
     
 }
 
@@ -114,8 +115,8 @@ img{
 .pictures {
     background-color: transparent;
     position: absolute;
-    top: 14%;
-    left:30%;
+    top: -1%;
+    left:13%;
     display: flex;
     flex-direction: column;
 }

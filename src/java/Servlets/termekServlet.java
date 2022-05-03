@@ -36,8 +36,6 @@ public class termekServlet extends HttpServlet {
         tservice.getTermekek().forEach(term -> {
             out.println("<div class='products'>" + term + " Ft " + "<input type = 'number'  min=\"0\" max=\"99\" name = '" + term.getTID() + "'/></div><BR>");
         });
-        out.println("<input type = 'submit' value = 'Megrendel'/>");
-        out.println("</form>");
         out.println("<div class='pictures'>");
         out.println("<img src=\"images/protein.jpg\" alt=\"Whey\" width=\"50\" height=\"50\">");
         out.println("<img src=\"images/MassGainer.jpg\" alt=\"MassGainer\" width=\"50\" height=\"50\">");
@@ -46,6 +44,8 @@ public class termekServlet extends HttpServlet {
         out.println("<img src=\"images/JointSupport.jpg\" alt=\"JointSupport\" width=\"50\" height=\"50\">");
         out.println("<img src=\"images/PreWorkout.jpg\" alt=\"PreWorkout\" width=\"50\" height=\"50\">");
         out.println("</div>");
+        out.println("<input type = 'submit' value = 'Megrendel'/>");
+        out.println("</form>");
         out.println("<form action = 'belepes.html'>");
         out.println("<input type = 'submit' value = 'Kilépés'>");
         out.println("</form>");
